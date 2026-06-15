@@ -1,0 +1,761 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Glad You&#x27;re Here! 🍀🙋🏼‍♀️</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="37bb9818-20d3-80e3-9e65-de2bb35e8a9e" class="page serif"><header><img class="page-cover-image" src="Gemini_Generated_Image_5lhfsr5lhfsr5lhf_(1).png" style="object-position:center 15.52%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🌸</span></div><h1 class="page-title" dir="auto">Glad You&#x27;re Here! 🍀🙋🏼‍♀️</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8070-96cf-c119b4a27e8d"><div style="width:100%"><div style="display:contents" dir="auto"><figure id="37cb9818-20d3-8091-a20c-c74f5f7c0d47" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mtext mathvariant="bold-sans-serif">W</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">E</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">L</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">C</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">O</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">M</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">E</mtext><mtext>   </mtext><mtext mathvariant="bold-sans-serif">T</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">O</mtext><mtext>   </mtext></mrow><mstyle mathcolor="#F4D7DC"><mrow><mtext mathvariant="bold-sans-serif">S</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">U</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">N</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">I</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">D</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">H</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">I’</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">S</mtext><mtext>   </mtext><mtext mathvariant="bold-sans-serif">D</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">I</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">G</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">I</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">T</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">A</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">L</mtext><mtext>   </mtext><mtext mathvariant="bold-sans-serif">G</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">A</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">R</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">D</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">E</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">N</mtext></mrow></mstyle></mrow><annotation encoding="application/x-tex">\textbf{\textsf{W E L C O M E~~~T O~~~}}\color{#F4D7DC}\textbf{\textsf{S U N I D H I&#x27; S~~~D I G I T A L~~~G A R D E N}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord text"><span class="mord textsf textbf">W E L C O M E</span><span class="mord textsf textbf nobreak">   </span><span class="mord textsf textbf">T O</span><span class="mord textsf textbf nobreak">   </span></span></span><span class="mord text" style="color:#F4D7DC;"><span class="mord text" style="color:#F4D7DC;"><span class="mord textsf textbf" style="color:#F4D7DC;">S U N I D H I’ S</span><span class="mord textsf textbf nobreak" style="color:#F4D7DC;">   </span><span class="mord textsf textbf" style="color:#F4D7DC;">D I G I T A L</span><span class="mord textsf textbf nobreak" style="color:#F4D7DC;">   </span><span class="mord textsf textbf" style="color:#F4D7DC;">G A R D E N</span></span></span></span></span></span></span></div></figure></div></div></figure></div><div style="display:contents" dir="ltr"><figure id="37bb9818-20d3-8043-8c4f-e9f69edefb10" class="image" style="text-align:center"><a href="949dd06d-551f-4c94-8587-2cdeb9178980.png"><img style="width:240px" src="949dd06d-551f-4c94-8587-2cdeb9178980.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-pink_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-80ca-b3cb-e307fb309401"><div style="width:100%"><div style="display:contents" dir="auto"><figure id="37cb9818-20d3-80b5-9500-c8e342f6e7b3" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="center" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="2.074em"><mstyle mathcolor="#FFF9F4"><mtext> </mtext><mtext mathvariant="italic">🌷</mtext><mtext> </mtext><mtext mathvariant="italic">Hi,</mtext><mtext> </mtext><mtext mathvariant="italic">I’m</mtext><mtext> </mtext><mtext mathvariant="italic">Sunidhi</mtext><mtext> </mtext><mtext mathvariant="italic">Mishra</mtext></mstyle></mstyle></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="0.9em"><mstyle mathcolor="#FFF9F4"><mtext> </mtext><mtext mathvariant="bold-italic">A</mtext><mtext> </mtext><mtext mathvariant="bold-italic">builder</mtext><mtext> </mtext><mtext mathvariant="bold-italic">at</mtext><mtext> </mtext><mtext mathvariant="bold-italic">heart</mtext><mtext> </mtext><mtext mathvariant="bold-italic">who</mtext><mtext> </mtext><mtext mathvariant="bold-italic">loves</mtext><mtext> </mtext><mtext mathvariant="bold-italic">solving</mtext><mtext> </mtext><mtext mathvariant="bold-italic">problems,</mtext><mtext> </mtext><mtext mathvariant="bold-italic">organizing</mtext><mtext> </mtext><mtext mathvariant="bold-italic">complexity,</mtext><mtext> </mtext><mtext mathvariant="bold-italic">and</mtext><mtext> </mtext><mtext mathvariant="bold-italic">creating</mtext><mtext> </mtext><mtext mathvariant="bold-italic">delightful</mtext><mtext> </mtext><mtext mathvariant="bold-italic">experiences.</mtext></mstyle></mstyle></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{gathered}
+\textit{\huge \color{#FFF9F4} 🌷 Hi, I&#x27;m Sunidhi Mishra} \\
+
+\textit{\small \textbf{\color{#FFF9F4} A builder at heart who loves solving problems, organizing complexity, and creating delightful experiences.}}
+\end{gathered}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6435em;vertical-align:-1.5718em;"></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0718em;"><span style="top:-4.7055em;"><span class="pstrut" style="height:4.074em;"></span><span class="mord"><span class="mord text"><span class="mord textit sizing reset-size6 size10" style="color:#FFF9F4;"> 🌷 Hi, I’m Sunidhi Mishra</span></span></span></span><span style="top:-3.1622em;"><span class="pstrut" style="height:4.074em;"></span><span class="mord"><span class="mord text"><span class="mord text sizing reset-size6 size5"><span class="mord textbf textit" style="color:#FFF9F4;"> A builder at heart who loves solving problems, organizing complexity, and creating delightful experiences.</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5718em;"><span></span></span></span></span></span></span></span></span></span></span></span></div></figure></div></div></figure></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8067-8905-d3da23fea6f2" class="column-list"><div style="display:contents" dir="auto"><div id="37cb9818-20d3-80a7-8073-ff2fdfc0210b" style="width:62.5%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8061-ac2f-e3baf0f7a662"><div style="width:100%"><div style="display:contents" dir="auto"><figure id="37cb9818-20d3-808c-93eb-fc576523621a" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mtext mathvariant="bold-sans-serif">👩🏼‍💻</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">MY</mtext><mtext> </mtext></mrow><mstyle mathcolor="#F4D7DC"><mtext mathvariant="bold-sans-serif">STORY</mtext></mstyle></mrow><annotation encoding="application/x-tex">\textbf{\textsf{👩🏼‍💻~MY }}\color{#F4D7DC}\textbf{\textsf{STORY}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord text"><span class="mord textbf">👩🏼‍💻</span><span class="mord textsf textbf nobreak"> </span><span class="mord textsf textbf">MY </span></span></span><span class="mord text" style="color:#F4D7DC;"><span class="mord text" style="color:#F4D7DC;"><span class="mord textsf textbf" style="color:#F4D7DC;">STORY</span></span></span></span></span></span></span></div></figure></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-80c0-9653-f09dfb9cf29a"/></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80de-b410-d0c80ab92587" class="">I&#x27;m a builder who enjoys turning messy problems into structured systems and better experiences.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80de-b707-ddd3c79cebc1" class="">Over the past few years, I&#x27;ve worked across customer support, operations, workflow design, and AI-driven projects. From improving automation workflows and reducing operational inefficiencies to designing product solutions and experimenting with AI tools, I&#x27;ve always been drawn to understanding how systems work and how they can work better.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80f5-9dc6-ccfa2ad3ae03" class="">What excites me most is finding patterns, simplifying complexity, and creating solutions that make life easier for users and teams. Whether it&#x27;s optimizing a support journey, designing a product experience, or automating a repetitive process, I enjoy combining analytical thinking with execution.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80b5-a647-edb58ca60ac2" class="">Currently, I&#x27;m building AI-powered projects, deepening my understanding of product strategy, and exploring opportunities where I can contribute across product, operations, strategy, and start-up environments.</p></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8067-aecd-dcf12083691c"><div style="width:100%"><div style="display:contents" dir="auto"><figure id="37cb9818-20d3-8059-a235-c6217ae1df5b" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mtext mathvariant="bold-sans-serif">🌸</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">EXPLORE</mtext><mtext> </mtext></mrow><mstyle mathcolor="#F4D7DC"><mrow><mtext mathvariant="bold-sans-serif">MY</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">GARDEN</mtext></mrow></mstyle></mrow><annotation encoding="application/x-tex">\textbf{\textsf{🌸~EXPLORE~}}\color{#F4D7DC}\textbf{\textsf{MY~GARDEN}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord text"><span class="mord textbf">🌸</span><span class="mord textsf textbf nobreak"> </span><span class="mord textsf textbf">EXPLORE</span><span class="mord textsf textbf nobreak"> </span></span></span><span class="mord text" style="color:#F4D7DC;"><span class="mord text" style="color:#F4D7DC;"><span class="mord textsf textbf" style="color:#F4D7DC;">MY</span><span class="mord textsf textbf nobreak" style="color:#F4D7DC;"> </span><span class="mord textsf textbf" style="color:#F4D7DC;">GARDEN</span></span></span></span></span></span></span></div></figure></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-80df-b97d-d8dde7ec292e" class="column-list"><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8001-bf3d-d068cdf34b69" style="width:100%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8082-86e0-f0f6449c7301"><div style="width:100%"><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-80c7-9448-c534b544c5f1" class="">📂 <a href="Glad%20You&#x27;re%20Here!%20%F0%9F%8D%80%F0%9F%99%8B%F0%9F%8F%BC%E2%80%8D%E2%99%80%EF%B8%8F%2037bb981820d380e39e65de2bb35e8a9e.html">Projects</a></h3></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8005-a09d-e7d96074bb48"><div style="width:100%"><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-800f-a23c-d96630632050" class="">💼 <a href="Glad%20You&#x27;re%20Here!%20%F0%9F%8D%80%F0%9F%99%8B%F0%9F%8F%BC%E2%80%8D%E2%99%80%EF%B8%8F%2037bb981820d380e39e65de2bb35e8a9e.html">Experience</a></h3></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8051-8af5-f0747134a7f6"><div style="width:100%"><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-8084-9ea6-e1c9bfb2c1c7" class="">🎓 <a href="Glad%20You&#x27;re%20Here!%20%F0%9F%8D%80%F0%9F%99%8B%F0%9F%8F%BC%E2%80%8D%E2%99%80%EF%B8%8F%2037bb981820d380e39e65de2bb35e8a9e.html">Education</a></h3></div></div></figure></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-80b9-95e8-f1011490bfe8" style="width:100%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-80b0-8e31-c8f91f12879d"><div style="width:100%"><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-80da-9c35-c36ebfa6699d" class="">🛠️ <a href="Glad%20You&#x27;re%20Here!%20%F0%9F%8D%80%F0%9F%99%8B%F0%9F%8F%BC%E2%80%8D%E2%99%80%EF%B8%8F%2037bb981820d380e39e65de2bb35e8a9e.html">Skills</a></h3></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8009-b575-ce21c8f9417f"><div style="width:100%"><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-8039-8115-ce99662e0aa5" class="">🏅 <a href="Glad%20You&#x27;re%20Here!%20%F0%9F%8D%80%F0%9F%99%8B%F0%9F%8F%BC%E2%80%8D%E2%99%80%EF%B8%8F%2037bb981820d380e39e65de2bb35e8a9e.html">Certifications</a></h3></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-800e-9da8-ccf71c61e2b0"><div style="width:100%"><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-805d-b846-c3c59acc04a1" class=""><a href="Glad%20You&#x27;re%20Here!%20%F0%9F%8D%80%F0%9F%99%8B%F0%9F%8F%BC%E2%80%8D%E2%99%80%EF%B8%8F%2037bb981820d380e39e65de2bb35e8a9e.html">🤝 Let’s Connect</a></h3></div></div></figure></div></div></div></div></div></div></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80c1-b931-df2a02906142" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8030-9f7b-c23bcee393b8" style="width:37.49999999999996%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-800c-a6e8-ec7b9417405e"><div style="width:100%"><div style="display:contents" dir="auto"><figure id="37cb9818-20d3-807a-87bb-c136bf73a3e7" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mtext mathvariant="bold-sans-serif">🐣</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">FUN</mtext><mtext> </mtext></mrow><mstyle mathcolor="#F4D7DC"><mtext mathvariant="bold-sans-serif">FACTS</mtext></mstyle></mrow><annotation encoding="application/x-tex">\textbf{\textsf{🐣~FUN~}}\color{#F4D7DC}\textbf{\textsf{FACTS}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord text"><span class="mord textbf">🐣</span><span class="mord textsf textbf nobreak"> </span><span class="mord textsf textbf">FUN</span><span class="mord textsf textbf nobreak"> </span></span></span><span class="mord text" style="color:#F4D7DC;"><span class="mord text" style="color:#F4D7DC;"><span class="mord textsf textbf" style="color:#F4D7DC;">FACTS</span></span></span></span></span></span></span></div></figure></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-80a5-bec3-d1ad04990598"/></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8069-98ca-e70a5eec41e0" class="">📚 I organize almost everything in Notion.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80c3-b0a1-f7738196ea65" class="">☕ I genuinely enjoy optimizing workflows and processes.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80e8-b530-dcd0e3c12789" class="">🤖 I spend my free time building AI-powered side projects.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80da-8ec2-cca74a1910b6" class="">🔍 I love finding patterns hidden inside messy problems.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8027-92de-e263f62be247" class="">🎀 Cute digital spaces, stationery, and aesthetic systems make me happy.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8077-8f70-ea5e0a5a2532" class="">🚀 My favourite projects sit at the intersection of users, systems, and technology.</p></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-806c-8e32-f7129e7729da"><div style="width:100%"><div style="display:contents" dir="auto"><figure id="37cb9818-20d3-8006-bfa0-c3d5eaae6b89" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mtext mathvariant="bold-sans-serif">🌳</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">PLANT</mtext><mtext> </mtext><mtext mathvariant="bold-sans-serif">A</mtext><mtext> </mtext></mrow><mstyle mathcolor="#F4D7DC"><mtext mathvariant="bold-sans-serif">CONVERSATION</mtext></mstyle></mrow><annotation encoding="application/x-tex">\textbf{\textsf{🌳~PLANT~A~}}\color{#F4D7DC}\textbf{\textsf{CONVERSATION}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord text"><span class="mord textbf">🌳</span><span class="mord textsf textbf nobreak"> </span><span class="mord textsf textbf">PLANT</span><span class="mord textsf textbf nobreak"> </span><span class="mord textsf textbf">A</span><span class="mord textsf textbf nobreak"> </span></span></span><span class="mord text" style="color:#F4D7DC;"><span class="mord text" style="color:#F4D7DC;"><span class="mord textsf textbf" style="color:#F4D7DC;">CONVERSATION</span></span></span></span></span></span></span></div></figure></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-8009-aaa3-e419eade68dd"/></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80b8-8269-fdee2406fd0d" class="">💻  <a href="https://www.linkedin.com/in/sunidhimishra1203/">LinkedIn</a></p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-803b-8ddf-fb06c3c4c3ff" class="">🛠️  <a href="https://github.com/sunidhi-mishra">GitHub</a></p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-807c-b7ef-d841bc95097a" class="">📧  <a href="mailto:msunidhi03@gmail.com">msunidhi03@gmail.com</a></p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8097-94bf-e2f78defdf6e" class="">📄 <a href="https://drive.google.com/file/d/1ex-6G_czOD02z0b76DVwu8QaM8Fwki51/view?usp=sharing">Download Resume</a></p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80c6-bb40-ce20826c3c87" class="">📆  <a href="https://calendly.com/msunidhi03/30min">Calendly</a></p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8013-bfd0-c911d832cc44" class="">📞  +91-9123271341</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-803e-b4b6-dfa28fa16713" class="">📍  Bangalore, India</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-808e-b077-e0fb63045882" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8075-b2a8-fddef94dd01f" class="column-list"></div></div><div style="display:contents" dir="ltr"><figure id="37cb9818-20d3-80a6-b518-e8b99248ad81" class="image" style="text-align:center"><a href="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"><img style="width:480px" src="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80ae-8477-c75575d7ccec" class="">
+</p></div><div style="display:contents" dir="auto"><h1 id="37cb9818-20d3-8051-97b8-deffc628e875" class="">🌷 Projects in Bloom</h1></div><div style="display:contents" dir="ltr"><div id="37cb9818-20d3-8011-bfe8-cc48cbbcc754" class="collection-content"><h4 class="collection-title">Explore a project to see the thinking behind it</h4><div class="collection-content-wrapper"><table class="collection-content"><colgroup><col style="width:41.17647058823529%"/><col style="width:29.411764705882355%"/><col style="width:29.411764705882348%"/></colgroup><thead><tr><th><span class="icon property-icon"><img src="https://app.notion.com/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>🏷️ Tags</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>✨ Key Highlight</th></tr></thead><tbody><tr id="645b9818-20d3-8287-841b-81cb1b0a301d"><td class="cell-title"><a href="ResolveIQ%20-%20AI%20Support%20Copilot%20(Ongoing)%20645b981820d38287841b81cb1b0a301d.html"><img class="icon notion-static-icon" src="https://app.notion.com/icons/headphones_pink.svg"/>ResolveIQ - AI Support Copilot (Ongoing)</a></td><td class="cell-Uxtf"><span class="selected-value select-value-color-pink">AI Evaluation</span><span class="selected-value select-value-color-default">Customer Support</span><span class="selected-value select-value-color-purple">Generative AI</span><span class="selected-value select-value-color-gray">Human-in-the-Loop AI</span><span class="selected-value select-value-color-default">Product Management</span><span class="selected-value select-value-color-red">SaaS</span><span class="selected-value select-value-color-green">Workflow Automation</span></td><td class="cell-phqy">Built an AI-powered support copilot that helps agents analyze tickets, generate responses, make escalation decisions, and review AI recommendations through transparent, human-in-the-loop workflows.</td></tr><tr id="016b9818-20d3-838c-8601-817fa6d997df"><td class="cell-title"><a href="Cart%20Abandonment%20Reduction%20PRD%20016b981820d3838c8601817fa6d997df.html"><img class="icon notion-static-icon" src="https://app.notion.com/icons/shopping-cart_pink.svg"/>Cart Abandonment Reduction PRD</a></td><td class="cell-Uxtf"><span class="selected-value select-value-color-purple">Checkout Optimization</span><span class="selected-value select-value-color-yellow">E-commerce</span><span class="selected-value select-value-color-orange">Experimentation</span><span class="selected-value select-value-color-blue">Funnel Analysis</span><span class="selected-value select-value-color-yellow">PRD</span><span class="selected-value select-value-color-default">Product Management</span><span class="selected-value select-value-color-brown">Product Strategy</span><span class="selected-value select-value-color-orange">User Experience</span></td><td class="cell-phqy">Created a data-driven PRD to reduce checkout abandonment by addressing payment failures, hidden fees, COD discoverability, and checkout performance, with an estimated ₹78 Cr/month GMV impact.</td></tr><tr id="a24b9818-20d3-8224-958c-01d2a36d5616"><td class="cell-title"><a href="Weekday%20Interview%20Scheduling%20Framework%20a24b981820d38224958c01d2a36d5616.html"><img class="icon notion-static-icon" src="https://app.notion.com/icons/calendar-month_pink.svg"/>Weekday Interview Scheduling Framework</a></td><td class="cell-Uxtf"><span class="selected-value select-value-color-orange">Capacity Planning</span><span class="selected-value select-value-color-pink">Decision Trees</span><span class="selected-value select-value-color-brown">Operations Design</span><span class="selected-value select-value-color-default">Process Design</span><span class="selected-value select-value-color-pink">Service Operations</span><span class="selected-value select-value-color-purple">Systems Thinking</span><span class="selected-value select-value-color-red">Workflow Optimization</span></td><td class="cell-phqy">Designed a systems-first scheduling framework that projected an 82.8% scheduling SLA while handling 500+ daily interview requests using only two interns.</td></tr><tr id="fcab9818-20d3-824e-978a-81b5a8da40bd"><td class="cell-title"><a href="Optima%20Learn%20Research%20Project%20fcab981820d3824e978a81b5a8da40bd.html"><img class="icon notion-static-icon" src="https://app.notion.com/icons/chart-area_pink.svg"/>Optima Learn Research Project</a></td><td class="cell-Uxtf"><span class="selected-value select-value-color-blue">EdTech</span><span class="selected-value select-value-color-green">Onboarding Optimization</span><span class="selected-value select-value-color-red">Product Design</span><span class="selected-value select-value-color-default">Product Management</span><span class="selected-value select-value-color-green">UX Research</span><span class="selected-value select-value-color-orange">Usability Testing</span><span class="selected-value select-value-color-orange">User Experience</span><span class="selected-value select-value-color-gray">User Research</span></td><td class="cell-phqy">Identified critical onboarding and usability issues through user research and redesigned the AI Study Planner experience to reduce overwhelm and create a clearer path to action.</td></tr><tr id="37cb9818-20d3-8067-b109-d47fed7da7e5"><td class="cell-title"><a href="Automated%20Form%20to%20Notification%20Workflow%2037cb981820d38067b109d47fed7da7e5.html"><img class="icon notion-static-icon" src="https://app.notion.com/icons/robot_pink.svg"/>Automated Form to Notification Workflow</a></td><td class="cell-Uxtf"><span class="selected-value select-value-color-yellow">No-Code Automation</span><span class="selected-value select-value-color-brown">Operations Design</span><span class="selected-value select-value-color-default">Process Design</span><span class="selected-value select-value-color-pink">Productivity</span><span class="selected-value select-value-color-blue">System Design</span><span class="selected-value select-value-color-green">Workflow Automation</span><span class="selected-value select-value-color-blue">n8n</span></td><td class="cell-phqy">Built an automated workflow that captures form submissions, stores structured data, and triggers real-time email notifications, eliminating manual tracking and improving response efficiency.</td></tr><tr id="37cb9818-20d3-807b-b0b8-ea2254a7f5e4"><td class="cell-title"><a href="PM%20Study%20Calendar%2037cb981820d3807bb0b8ea2254a7f5e4.html"><img class="icon notion-static-icon" src="https://app.notion.com/icons/book-closed_pink.svg"/>PM Study Calendar</a></td><td class="cell-Uxtf"><span class="selected-value select-value-color-blue">AI-Assisted Development</span><span class="selected-value select-value-color-default">Habit Tracking</span><span class="selected-value select-value-color-blue">Learning Systems</span><span class="selected-value select-value-color-default">Product Management</span><span class="selected-value select-value-color-pink">Productivity</span><span class="selected-value select-value-color-orange">User Experience</span></td><td class="cell-phqy">Built a PM learning tracker that transforms scattered learning into a structured, calendar-based system with task management and progress tracking.</td></tr><tr id="37cb9818-20d3-80f9-8a4e-dddc45f4bff4"><td class="cell-title"><a href="Case%20Study%20on%20Urban%20Water%20Leakage%20Issue%2037cb981820d380f98a4edddc45f4bff4.html"><img class="icon notion-static-icon" src="https://app.notion.com/icons/water_pink.svg"/>Case Study on Urban Water Leakage Issue</a></td><td class="cell-Uxtf"><span class="selected-value select-value-color-brown">Case Study</span><span class="selected-value select-value-color-blue">Experiment Design</span><span class="selected-value select-value-color-brown">First-Principles Thinking</span><span class="selected-value select-value-color-purple">Operations Strategy</span><span class="selected-value select-value-color-purple">Prioritization</span><span class="selected-value select-value-color-brown">Product Strategy</span><span class="selected-value select-value-color-gray">Smart Cities</span><span class="selected-value select-value-color-purple">Systems Thinking</span></td><td class="cell-phqy">Developed a product strategy showing that prioritization and operator trust, rather than detection accuracy alone, are the primary drivers of successful water leakage management.</td></tr></tbody></table></div><br/><br/></div></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8049-ad1e-c9f6b1d3757f" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="37cb9818-20d3-806e-8678-d3ff9b2e1165" class="image" style="text-align:center"><a href="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"><img style="width:480px" src="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80f5-b9fc-fd287620cf08" class="">
+</p></div><div style="display:contents" dir="auto"><h1 id="37cb9818-20d3-80dc-86f2-ddb94dc38555" class="">🧠 Problem Solving Toolkit</h1></div><div style="display:contents" dir="ltr"><div id="37cb9818-20d3-804c-b220-cbf7c46fc56b" class="collection-content"><h4 class="collection-title">A toolkit for strategy, execution, and problem-solving</h4><div class="collection-content-wrapper"><table class="collection-content"><colgroup><col style="width:100%"/></colgroup><thead><tr><th><span class="icon property-icon"><img src="https://app.notion.com/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th></tr></thead><tbody><tr id="37cb9818-20d3-8090-85a0-e73b8569db37"><td class="cell-title"><a href="Product%20Lifecycle%20Management%2037cb981820d3809085a0e73b8569db37.html"> Product Lifecycle Management</a></td></tr><tr id="37cb9818-20d3-80a0-a618-c0db04cec30a"><td class="cell-title"><a href="Product%20Thinking%2037cb981820d380a0a618c0db04cec30a.html"> Product Thinking</a></td></tr><tr id="37cb9818-20d3-804c-af2c-f997a8170c91"><td class="cell-title"><a href="Problem%20Structuring%2037cb981820d3804caf2cf997a8170c91.html">Problem Structuring</a></td></tr><tr id="37cb9818-20d3-8055-bfef-ef375f7511cb"><td class="cell-title"><a href="User%20Research%2037cb981820d38055bfefef375f7511cb.html"> User Research</a></td></tr><tr id="37cb9818-20d3-8049-8245-d398592deb67"><td class="cell-title"><a href="Product%20Roadmapping%2037cb981820d380498245d398592deb67.html">Product Roadmapping</a></td></tr><tr id="37cb9818-20d3-80ef-9d2d-f888bafaea63"><td class="cell-title"><a href="Prioritization%20(RICE)%2037cb981820d380ef9d2df888bafaea63.html"> Prioritization (RICE)</a></td></tr><tr id="37cb9818-20d3-80e5-96f3-cb2fe517f5c8"><td class="cell-title"><a href="Customer%20Journey%20Mapping%2037cb981820d380e596f3cb2fe517f5c8.html">Customer Journey Mapping</a></td></tr><tr id="37cb9818-20d3-80b0-a3ba-d05105d083ec"><td class="cell-title"><a href="Hypothesis-Driven%20Development%2037cb981820d380b0a3bad05105d083ec.html">Hypothesis-Driven Development</a></td></tr><tr id="37cb9818-20d3-8023-8e1d-f31e64fa8278"><td class="cell-title"><a href="A%20B%20Testing%2037cb981820d380238e1df31e64fa8278.html">A/B Testing</a></td></tr><tr id="37cb9818-20d3-804c-97f4-d4277149623d"><td class="cell-title"><a href="Conversion%20Optimization%2037cb981820d3804c97f4d4277149623d.html">Conversion Optimization</a></td></tr><tr id="37cb9818-20d3-802a-a454-e2c55715b425"><td class="cell-title"><a href="Data%20Analysis%2037cb981820d3802aa454e2c55715b425.html">Data Analysis</a></td></tr><tr id="37cb9818-20d3-800f-a5f4-dd7626ebd028"><td class="cell-title"><a href="SQL%2037cb981820d3800fa5f4dd7626ebd028.html"> SQL</a></td></tr><tr id="37cb9818-20d3-806e-8693-ff897d575c8c"><td class="cell-title"><a href="Funnel%20Analysis%2037cb981820d3806e8693ff897d575c8c.html">Funnel Analysis</a></td></tr><tr id="37cb9818-20d3-8032-ae79-ca73a0209ada"><td class="cell-title"><a href="Metrics%20Definition%20(KPIs,%20North%20Star)%2037cb981820d38032ae79ca73a0209ada.html">Metrics Definition (KPIs, North Star)</a></td></tr><tr id="37cb9818-20d3-806e-8cbc-f11b9fdcb5eb"><td class="cell-title"><a href="Experimentation%2037cb981820d3806e8cbcf11b9fdcb5eb.html">Experimentation</a></td></tr><tr id="37cb9818-20d3-8059-8b15-cccb146bd7ef"><td class="cell-title"><a href="Workflow%20Design%2037cb981820d380598b15cccb146bd7ef.html"> Workflow Design</a></td></tr><tr id="37cb9818-20d3-808d-ba7e-f7f6d90ea967"><td class="cell-title"><a href="Operational%20Efficiency%2037cb981820d3808dba7ef7f6d90ea967.html"> Operational Efficiency</a></td></tr><tr id="37cb9818-20d3-80c4-9833-d8b85721f1a1"><td class="cell-title"><a href="Stakeholder%20Management%2037cb981820d380c49833d8b85721f1a1.html"> Stakeholder Management</a></td></tr><tr id="37cb9818-20d3-80d5-91d3-c3a9c304cc24"><td class="cell-title"><a href="Cross-functional%20Collaboration%2037cb981820d380d591d3c3a9c304cc24.html">Cross-functional Collaboration</a></td></tr><tr id="37cb9818-20d3-80bb-ae4f-d3dcb42835b2"><td class="cell-title"><a href="Agile%20Methodologies%2037cb981820d380bbae4fd3dcb42835b2.html">Agile Methodologies</a></td></tr><tr id="37cb9818-20d3-801f-bdfc-ce9970c00735"><td class="cell-title"><a href="Figma%2037cb981820d3801fbdfcce9970c00735.html"> Figma</a></td></tr><tr id="37cb9818-20d3-80e6-bfba-f5fe6fa7645a"><td class="cell-title"><a href="Jira%2037cb981820d380e6bfbaf5fe6fa7645a.html">Jira</a></td></tr><tr id="37cb9818-20d3-80e8-a38a-fba7828533ee"><td class="cell-title"><a href="Notion%2037cb981820d380e8a38afba7828533ee.html">Notion</a></td></tr><tr id="37cb9818-20d3-80e3-98b9-d8b1839e0205"><td class="cell-title"><a href="GitHub%2037cb981820d380e398b9d8b1839e0205.html">GitHub</a></td></tr><tr id="37cb9818-20d3-8073-868b-f241637c3340"><td class="cell-title"><a href="Workflow%20Automation%20(n8n)%2037cb981820d38073868bf241637c3340.html">Workflow Automation (n8n)</a></td></tr><tr id="37cb9818-20d3-8090-962f-c42a53fe57c2"><td class="cell-title"><a href="Prompt%20Design%20&amp;%20Iteration%20(LLMs)%2037cb981820d38090962fc42a53fe57c2.html">Prompt Design &amp; Iteration (LLMs)</a></td></tr><tr id="37cb9818-20d3-80d8-91c1-f63a085d8746"><td class="cell-title"><a href="Claude%2037cb981820d380d891c1f63a085d8746.html">Claude</a></td></tr><tr id="37cb9818-20d3-80b8-a255-fcf108593e52"><td class="cell-title"><a href="ChatGPT%2037cb981820d380b8a255fcf108593e52.html">ChatGPT</a></td></tr><tr id="37cb9818-20d3-8019-8c86-cb83222f8c9d"><td class="cell-title"><a href="Gemini%2037cb981820d380198c86cb83222f8c9d.html">Gemini</a></td></tr><tr id="37cb9818-20d3-807f-9d5b-f58149dd3cbb"><td class="cell-title"><a href="Rapid%20Prototyping%2037cb981820d3807f9d5bf58149dd3cbb.html"> Rapid Prototyping</a></td></tr><tr id="37cb9818-20d3-80af-9ec7-dcfe8e199b2e"><td class="cell-title"><a href="Vibe%20Coding%2037cb981820d380af9ec7dcfe8e199b2e.html">Vibe Coding</a></td></tr><tr id="37cb9818-20d3-8009-bd20-e03ffad296c9"><td class="cell-title"><a href="Google%20Antigravity%2037cb981820d38009bd20e03ffad296c9.html">Google Antigravity</a></td></tr><tr id="37cb9818-20d3-80b7-aec3-f076dff4ae41"><td class="cell-title"><a href="Lovable%2037cb981820d380b7aec3f076dff4ae41.html">Lovable</a></td></tr><tr id="37cb9818-20d3-803f-ab63-f3ef23d22506"><td class="cell-title"><a href="Emergent%2037cb981820d3803fab63f3ef23d22506.html">Emergent</a></td></tr><tr id="37cb9818-20d3-80bb-ad38-c1ec9d4d1314"><td class="cell-title"><a href="Cursor%2037cb981820d380bbad38c1ec9d4d1314.html">Cursor</a></td></tr><tr id="37cb9818-20d3-8020-b03c-dcaf12c9e5c2"><td class="cell-title"><a href="Google%20Sheets%20MS%20Excel%2037cb981820d38020b03cdcaf12c9e5c2.html">Google Sheets / MS Excel</a></td></tr><tr id="37cb9818-20d3-8060-90b7-c49d1fbd6157"><td class="cell-title"><a href="Google%20Docs%20MS%20Word%2037cb981820d3806090b7c49d1fbd6157.html">Google Docs / MS Word</a></td></tr><tr id="37cb9818-20d3-8041-9f30-cac2753368c3"><td class="cell-title"><a href="Google%20Slides%20MS%20Powerpoint%2037cb981820d380419f30cac2753368c3.html">Google Slides / MS Powerpoint</a></td></tr><tr id="37cb9818-20d3-80cb-85c8-f7e4c25553cb"><td class="cell-title"><a href="Systems%20Thinking%2037cb981820d380cb85c8f7e4c25553cb.html">Systems Thinking</a></td></tr><tr id="37cb9818-20d3-80a8-b924-d4fc2b4c07d9"><td class="cell-title"><a href="Structured%20Problem%20Solving%2037cb981820d380a8b924d4fc2b4c07d9.html">Structured Problem Solving</a></td></tr><tr id="37cb9818-20d3-80d8-aecc-f037183b85f9"><td class="cell-title"><a href="Ownership%2037cb981820d380d8aeccf037183b85f9.html">Ownership</a></td></tr><tr id="37cb9818-20d3-8021-a7fe-eeca59ed5a59"><td class="cell-title"><a href="Curiosity%2037cb981820d38021a7feeeca59ed5a59.html">Curiosity</a></td></tr><tr id="37cb9818-20d3-8060-8692-e92aacd4fce8"><td class="cell-title"><a href="Adaptability%2037cb981820d380608692e92aacd4fce8.html">Adaptability</a></td></tr><tr id="37cb9818-20d3-8041-b66e-dc2f691b6cc6"><td class="cell-title"><a href="Bias%20for%20Action%2037cb981820d38041b66edc2f691b6cc6.html">Bias for Action</a></td></tr><tr id="37cb9818-20d3-804c-956f-ffc362be603a"><td class="cell-title"><a href="Continuous%20Learning%2037cb981820d3804c956fffc362be603a.html">Continuous Learning</a></td></tr></tbody></table></div><br/><br/></div></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-805e-a107-d55652bbad46" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="37cb9818-20d3-80ea-8d8e-cd2169cef335" class="image" style="text-align:center"><a href="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"><img style="width:480px" src="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80a9-a634-d32201898e3a" class="">
+</p></div><div style="display:contents" dir="auto"><h1 id="37cb9818-20d3-80ef-bc43-c1591be455e8" class="">🛣️ Professional Journey</h1></div><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-80cd-b906-f8e3db4fc1d1" class=""><em>From customer support and operations to product thinking, systems design, and AI workflows</em></h4></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-80a5-90f0-e03ce67c9ae7" class="column-list"><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8000-aab6-fb453818ca6b" style="width:106.25%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-pink_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-80fb-b4d4-f9caea4a4529"><div style="width:100%"><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-80f2-bd37-e385bcfebf8c" class="">💻   Senior Technician Technical Support</h3></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-8021-bb69-caaaa6c4a5a4"/></div><div style="display:contents" dir="auto"><h3 id="37cb9818-20d3-80c8-af05-db8a970b3e03" class="">🌐   Dell Technologies</h3></div></div></figure></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8053-b4b1-cb53e11ce980" style="width:49.999999999999986%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-pink_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8022-9fc7-d042be17a576"><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-8002-b2f5-d27ab05d9e8c" class="">📅   July 2024 – Jan 2026</h4></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-800c-a4d8-c81e054f7162"/></div><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-8088-9ccb-f02cca3b9217" class="">📍   Bengaluru</h4></div></div></figure></div></div></div></div></div><div style="display:contents" dir="auto"><blockquote id="37cb9818-20d3-802e-9ecd-da6eeb7344da" class=""><div style="display:contents" dir="auto"><p id="37cb9818-20d3-803e-ad50-fb7efaa145ee" class="">🤖 Improved chat automation containment by 15–20% through workflow optimization.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80e3-9f26-f99ceb0c339e" class="">⚙️ Increased virtual assistant efficiency by ~20% by redesigning escalation flows.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80d0-ac97-ef3b0d562928" class="">📊 Optimized support operations using SLA, resolution time, and containment metrics.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8032-ae49-e42aff87afa3" class="">🛡️ Co-developed SMART ID verification framework, reducing fraud leakage by 25–30%.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8030-a8a9-fee1cb1749c7" class="">🔄 Supported migration to integrated support systems, reducing handling time by 10–12%.</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-800c-82b7-f2d3a244fe12" class="">⭐ Maintained 100% CSAT while managing 200+ tickets weekly.</p></div></blockquote></div><div style="display:contents" dir="ltr"><figure class="block-color-brown_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-80e4-8db9-d94a010df3aa"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-800f-9d0e-f6048156d632" class=""> Skills Applied</h4></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-8016-a408-f8d8cc55407c"/></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80ee-988f-d7fbe38e56e4" class="">Workflow Optimization • Operations Design • Automation Strategy • Stakeholder Collaboration • Process Improvement • Customer Experience</p></div></div></figure></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8071-8e3e-d0512554de12" class="column-list"><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8051-b1c2-db212a43da1d" style="width:59.375%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8086-90e9-d1c9c6b467dd"><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-8094-893a-d69766c6b709" class="">🤖 Automation</h4></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80cc-9e1f-de2ea4a06acd" class=""><em>+20% <br/>Workflow Efficiency</em></p></div></div></figure></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-805d-9521-c15e12dc4582" style="width:65.625%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-80dc-adbb-ffa17b65abc9"><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-806b-a5ed-d2c1b38f8958" class="">🛡️ Fraud Prevention</h4></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8015-ba04-d66580240e8a" class=""><em>-30% <br/>Operational Leakage</em></p></div></div></figure></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8095-8a5c-c10ebaa076a1" style="width:59.375%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-pink_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8056-b7a1-caddb65b824d"><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-800d-aef6-d1f11b442a3e" class="">📊 Optimization</h4></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80e6-9d2e-c5b44eeffd66" class=""><em>+15% <br/>Resolution Efficiency</em></p></div></div></figure></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-8041-960a-d8249cf8cc35" style="width:65.625%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-purple_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-80ec-9742-d02ea89efcd3"><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-8067-961a-c25b1ea45ae7" class="">⭐ Customer Experience</h4></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80fb-b0bf-d6a626c38ccd" class=""><em>100%<br/> CSAT</em></p></div></div></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80be-885a-fdeb75ec3464" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="37cb9818-20d3-8093-a537-cbb7c18f2c8e" class="image" style="text-align:center"><a href="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"><img style="width:480px" src="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"/></a></figure></div><div style="display:contents" dir="auto"><h1 id="37cb9818-20d3-8047-9a65-e44e806e65ea" class=""><br/>📜 Learning &amp; Certifications</h1></div><div style="display:contents" dir="ltr"><div id="37cb9818-20d3-804f-b73f-dfed7638da7e" class="collection-content"><h4 class="collection-title">Learning AI, product, and analytics through hands-on projects</h4><div class="collection-content-wrapper"><table class="collection-content"><colgroup><col style="width:58.333333333333336%"/><col style="width:41.666666666666664%"/></colgroup><thead><tr><th><span class="icon property-icon"><img src="https://app.notion.com/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/link_gray.svg" style="width:14px;height:14px;display:block"/></span>🔗 Credential URL</th></tr></thead><tbody><tr id="37cb9818-20d3-8033-b7ee-d159d5dfd8bd"><td class="cell-title"><a href="Model%20Context%20Protocol%20Advanced%20Topics%2037cb981820d38033b7eed159d5dfd8bd.html"><span class="icon">🏅</span>Model Context Protocol: Advanced Topics</a></td><td class="cell-xBk\"><a href="https://verify.skilljar.com/c/efefrgy22oen" class="url-value">https://verify.skilljar.com/c/efefrgy22oen</a></td></tr><tr id="37cb9818-20d3-80a6-b486-e2673868b741"><td class="cell-title"><a href="Building%20with%20the%20Claude%20API%2037cb981820d380a6b486e2673868b741.html"><span class="icon">🏅</span>Building with the Claude API</a></td><td class="cell-xBk\"><a href="https://verify.skilljar.com/c/dws3gyptg2tf" class="url-value">https://verify.skilljar.com/c/dws3gyptg2tf</a></td></tr><tr id="37cb9818-20d3-80cb-9398-d841e14e45f9"><td class="cell-title"><a href="Claude%20with%20Google%20Cloud&#x27;s%20Vertex%20AI%2037cb981820d380cb9398d841e14e45f9.html"><span class="icon">🏅</span>Claude with Google Cloud&#x27;s Vertex AI</a></td><td class="cell-xBk\"><a href="https://verify.skilljar.com/c/mes88hq8bcun" class="url-value">https://verify.skilljar.com/c/mes88hq8bcun</a></td></tr><tr id="37cb9818-20d3-803f-8178-ec0b02a141b0"><td class="cell-title"><a href="Claude%20in%20Amazon%20Bedrock%2037cb981820d3803f8178ec0b02a141b0.html"><span class="icon">🏅</span>Claude in Amazon Bedrock</a></td><td class="cell-xBk\"><a href="https://verify.skilljar.com/c/s926duyswbde" class="url-value">https://verify.skilljar.com/c/s926duyswbde</a></td></tr><tr id="37cb9818-20d3-8084-8183-f74ac644d306"><td class="cell-title"><a href="AI%20Capabilities%20and%20Limitations%2037cb981820d380848183f74ac644d306.html"><span class="icon">🏅</span>AI Capabilities and Limitations</a></td><td class="cell-xBk\"><a href="https://verify.skilljar.com/c/nvxqnhovxt9s" class="url-value">https://verify.skilljar.com/c/nvxqnhovxt9s</a></td></tr><tr id="37cb9818-20d3-8089-b5e0-c9032a5c3c84"><td class="cell-title"><a href="SQL%20(Basic)%20Certificate%2037cb981820d38089b5e0c9032a5c3c84.html"><span class="icon">🏅</span>SQL (Basic) Certificate</a></td><td class="cell-xBk\"><a href="https://www.hackerrank.com/certificates/0e91c8e42846" class="url-value">https://www.hackerrank.com/certificates/0e91c8e42846</a></td></tr></tbody></table></div><br/><br/></div></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8089-99d5-eb904bfc805f" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="37cb9818-20d3-80cc-9cb4-cc6ba4d117ee" class="image" style="text-align:center"><a href="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"><img style="width:480px" src="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80b0-bb02-c567802e437c" class="">
+</p></div><div style="display:contents" dir="auto"><h1 id="37cb9818-20d3-804b-8589-cab6b43914ac" class="">🏫 Education</h1></div><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-80cf-8793-d11c933072e8" class=""><em>The academic foundation behind my journey into AI, systems thinking, and product building.</em></h4></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-809b-84a4-f39c14512ff7" class="column-list"><div style="display:contents" dir="auto"><div id="37cb9818-20d3-80a8-a9be-f89948c53e29" style="width:100%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-purple_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-80d0-8fcf-e8546c030a61"><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-80cd-a6ce-edf4e1399784" class="">🎓 Master of Computer Applications  —  Specialization in Artificial Intelligence <br/>JAIN University</h4></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-8099-bd12-c798e1d770ab"/></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80c0-b40d-dafbe7b44157" class="">🎯 Focus Areas:<br/>AI • Machine Learning • Data Analytics</p></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8077-ab18-f3f2664143f3"><div style="width:100%"><div style="display:contents" dir="auto"><h4 id="37cb9818-20d3-8039-938b-e5354a389ec7" class="">🎓 Bachelor of Computer Applications <br/>REVA University</h4></div><div style="display:contents" dir="auto"><hr id="37cb9818-20d3-809b-b070-fe479b815ea0"/></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-808a-8fb4-d2d2ea0d6fd4" class="">✨ CGPA: 9.12</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8086-9090-d4758a2b71a6" class="">🎯 Focus Areas: <br/>Software Development • Databases • Web Technologies • Systems Design</p></div></div></figure></div></div></div><div style="display:contents" dir="auto"><div id="37cb9818-20d3-801a-8793-e21109d41637" style="width:28.571428571428587%" class="column"><div style="display:contents" dir="ltr"><figure class="block-color-purple_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-807a-8e43-e29ef5519b5b"><div style="width:100%"><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80fd-956f-d9ecc6531fea" class="">📍 Bengaluru, India</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-808f-a79d-d94ca71b9d17" class="">📅  2025 – 2027 <br/>(Currently Pursuing)</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80e6-adf1-f97e21e4b4b5" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="37cb9818-20d3-8006-bcc6-f57d5fdd9dac"><div style="width:100%"><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8021-9726-d470e9bc7bac" class="">📍 Bengaluru, India</p></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8024-ab25-e43c29942d4b" class="">📅  2021 – 2024</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-8056-9bee-d2cbed99fb41" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80e7-b1f3-d935a580abcd" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="37cb9818-20d3-8021-9984-c89b1f46afbb" class="image" style="text-align:center"><a href="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"><img style="width:480px" src="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="37cb9818-20d3-80a1-b05d-e4c5c07405e4" class="">
+</p></div><div style="display:contents" dir="auto"><h1 id="37cb9818-20d3-804c-a248-fd629df45847" class="">🤝 Let’s Connect</h1></div><div style="display:contents" dir="ltr"><figure id="37cb9818-20d3-80c9-80ca-edb104de9dcf" class="image" style="text-align:center"><a href="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"><img style="width:480px" src="99f1cc60-81e1-4dff-81ad-dfbc3850c614.png"/></a></figure></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
